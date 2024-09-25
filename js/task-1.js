@@ -1,10 +1,4 @@
-const getUserNames = users => {
-  const names = [];
-  for (const user of users) {
-    names.push(user.name);
-  }
-  return names;
-};
+const getUserNames = users => users.map(user => user.name);
 
 console.log(
   getUserNames([
